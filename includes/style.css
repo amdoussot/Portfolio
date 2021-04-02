@@ -22,6 +22,10 @@
     padding: 14px 80px 18px 36px;
     cursor: pointer;
     margin-bottom: 5px;
+    
+}
+.img{
+    max-height: 20px
 }
 .description{
     text-align:left;
@@ -30,11 +34,13 @@
 .nbcc{
     transition: none;
     width: 100%;
+    margin-bottom: 20px;
 }
 .card h3{
     font-weight: 600;
     padding-left: .6em;
 }
+
 .card-1{
     background-image: url('images/webpage.png');
     background-repeat: no-repeat;
