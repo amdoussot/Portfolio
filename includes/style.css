@@ -23,6 +23,14 @@
     cursor: pointer;
     margin-bottom: 5px;
 }
+.description{
+    text-align:left;
+    font-size: medium;
+}
+.nbcc{
+    transition: none;
+    width: 100%;
+}
 .card h3{
     font-weight: 600;
     padding-left: .6em;
@@ -47,10 +55,20 @@
     background-position: right;
     background-size: 80px;
   }
+
+  .nbccApp{
+    background-image: url('images/Portfolio/appIndex.jpg');
+    background-repeat: no-repeat;
+    background-position: center;  
+    background-size: 100%;
+  }
 .card:hover{
-     transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 } 
+.nbcc:hover{
+    transform: none;
+}
 .footer {
     display: block;
 }
