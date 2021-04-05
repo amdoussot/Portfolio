@@ -10,11 +10,14 @@
 .header{
     font-size: 4.5em;
 } 
+.header-nbccWeb{
+    font-size: 2.5em;
+}
 
 .headerDescription{
     font-size: 1.5em;
 }
-.card{
+.card-1, .card-2, .card-3, .nbcc{
     border-radius: 4px;
     background: #fff;
     box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
@@ -22,8 +25,10 @@
     padding: 14px 80px 18px 36px;
     cursor: pointer;
     margin-bottom: 5px;
-    
-    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .description{
     text-align:left;
@@ -56,7 +61,7 @@
   }
   
   .card-3{
-    background-image: url('images/contacts.png');
+    background-image: url('images/hi.png');
     background-repeat: no-repeat;
     background-position: right;
     background-size: 80px;
@@ -68,7 +73,20 @@
     background-position: center;  
     background-size: 100%;
   }
-.card:hover{
+
+.portfolio-card{
+    margin: 0 auto; 
+    float: none; 
+    transition: none;
+    margin-bottom: 20px;
+    max-width: 80%;
+}
+.image:hover{
+    transform: scale(1.25);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    margin-bottom: 100px;
+}
+.card-1:hover, .card-2:hover, .card-3:hover{
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 } 
@@ -78,6 +96,7 @@
 .footer {
     display: block;
 }
+
 
 @media (min-width: 576px) {
     .card-deck {
@@ -95,7 +114,8 @@
     } 
     
 }
-@media (max-width: 576px) {
+
+@media (max-width: 768px) {
     .header{
         font-size: 3em;
     } 
@@ -105,4 +125,8 @@
     .jumbotron{ 
         min-height: 200px;
     } 
+    .card{
+        min-width: 100%;
+    }
+
 }
