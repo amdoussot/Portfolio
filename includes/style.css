@@ -178,9 +178,7 @@ button{
   -webkit-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%);
 }
-ul {
-    list-style-type: none;
-}
+
 .profile-card a {
     text-decoration: underline;
     color: rgb(56, 54, 54);
